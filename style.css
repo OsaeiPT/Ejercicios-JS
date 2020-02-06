@@ -11,3 +11,48 @@
     background-color: aqua;
     color           : whitesmoke;
 }
+
+.c_article {
+    max-width      : 100vh;
+    display        : flex;
+    justify-content: center;
+    margin-bottom  : 20px;
+    background-image: radial-gradient(circle at 50% 0, #28F3DF, #28F3DF 10vmin, transparent 30vmin),
+        linear-gradient(30deg, transparent, transparent 40vmin, #1A87F6 40vmin, transparent 50vmin),
+        linear-gradient(-30deg, transparent, transparent 32vmin, #1505DA 32vmin, #128BE6 55vmin),
+        linear-gradient(30deg, transparent, transparent 25vmin, #14157F 25vmin, #1423BE 100%),
+        linear-gradient(to top, #141E97, #000A18 40%);
+    animation-delay          : 10s;
+    animation-name           : aparecer;
+    animation-duration       : 4s;
+    animation-iteration-count: infinite;
+    animation-direction      : alternate;
+}
+
+.c_article-title {
+    display        : flex;
+    justify-content: center;
+    color          : whitesmoke;
+}
+
+.c_article-text {
+    font-size: 24px;
+    transform: scale(0.6) rotate(360deg) translateX(0px);
+    color    : whitesmoke;
+}
+
+@keyframes aparecer {
+
+    0% {
+        transform: scale(1) rotate(0deg) translateX()0px;
+    }
+
+    100% {
+        transform: scale(0) rotate(360deg) translateX(360px);
+    }
+
+    200% {
+        transform: scale(2)
+    }
+
+}
