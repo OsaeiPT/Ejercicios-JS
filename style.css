@@ -5,3 +5,9 @@
 .sub_titulo {
     margin.top: 40px;
 }
+
+.text_titulo {
+    margin-top      : 20px;
+    background-color: aqua;
+    color           : whitesmoke;
+}
